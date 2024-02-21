@@ -19,6 +19,9 @@ jobs:
           
         - name: Setup Java JDK
           uses: actions/setup-java@v4.0.0
+          with: 
+            java-version: '17'
+            distribution: 'adopt'
 
         - name: Build with Gradle
           run: ./gradlew build
@@ -28,6 +31,8 @@ jobs:
           with:
             name: fastlane_dummy.apk
             path: app/build/outputs/apk/app-debug.apk
+
+                    
           
           
         
