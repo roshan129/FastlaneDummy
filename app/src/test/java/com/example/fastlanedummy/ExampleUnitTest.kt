@@ -24,4 +24,9 @@ class ExampleUnitTest {
     fun addition_isCorrect3() {
         assertEquals(9, 2 + 7)
     }
+
+    @Test
+    fun subtraction_isCorrect3() {
+        assertEquals(6, 7 - 1)
+    }
 }
