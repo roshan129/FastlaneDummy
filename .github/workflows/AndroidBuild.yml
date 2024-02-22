@@ -33,8 +33,10 @@ jobs:
             path: app/build/outputs/apk/debug/app-debug.apk
 
         - name: Setup Fastlane
+          uses: tashi-iu/setup-fastlane@1.0.2
 
         - name: Set up Ruby
+          uses: ruby/setup-ruby@v1
 
         - name: Execute Fastlane test lane
           run: fastlane test
